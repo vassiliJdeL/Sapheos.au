@@ -8,6 +8,44 @@
     <meta name="description"
         content="Grades Education is led by a team with expertise in higher education operations, quality assurance, and compliance.">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 1.25rem;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 0 0.25rem 4rem;
+        }
+
+        .team-grid .card-link {
+            flex: 0 0 220px;
+        }
+
+        .team-grid .card {
+            padding: 1.75rem;
+        }
+
+        .team-grid .card h3 {
+            font-size: 1.15rem;
+        }
+
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 1200px) {
+            .team-grid {
+                justify-content: flex-start;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -43,12 +81,11 @@
             </p>
         </div>
 
-        <div class="grid-3">
+        <div class="team-grid">
             <!-- Vassili -->
             <a href="vassili.html" class="card-link">
                 <div class="card team-card" style="text-align: center;">
-                    <img src="vassili.jpg" alt="Dr. Vassili Joannidès de Lautour"
-                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid rgba(255,255,255,0.1);">
+                    <img src="vassili.jpg" alt="Dr. Vassili Joannidès de Lautour" class="team-photo">
                     <h3>Dr. Vassili Joannidès de Lautour</h3>
                     <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">Chairman of the board, CEO
                         world</p>
@@ -62,8 +99,7 @@
             <!-- Lazaro -->
             <a href="lazaro.html" class="card-link">
                 <div class="card team-card" style="text-align: center;">
-                    <img src="lazaro.jpg" alt="Dr. Lazaro Mederos"
-                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid rgba(255,255,255,0.1);">
+                    <img src="lazaro.jpg" alt="Dr. Lazaro Mederos" class="team-photo">
                     <h3>Dr. Lazaro Mederos</h3>
                     <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">CEO &ndash; Americas, COO
                         world</p>
@@ -77,8 +113,7 @@
             <!-- Rachael -->
             <a href="rachael.html" class="card-link">
                 <div class="card team-card" style="text-align: center;">
-                    <img src="rachael-team.png" alt="Rachael de Lautour"
-                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid rgba(255,255,255,0.1);">
+                    <img src="rachael-team.png" alt="Rachael de Lautour" class="team-photo">
                     <h3>Rachael de Lautour</h3>
                     <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">Publishing & Communication
                     </p>
@@ -93,8 +128,7 @@
             <!-- Mirela -->
             <a href="mirela.html" class="card-link">
                 <div class="card team-card" style="text-align: center;">
-                    <img src="mirela.jpg" alt="Mirela Quesnel"
-                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid rgba(255,255,255,0.1);">
+                    <img src="mirela.jpg" alt="Mirela Quesnel" class="team-photo">
                     <h3>Mirela Quesnel</h3>
                     <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">CFO</p>
                     <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.85em;">System Security &
