@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isocrates - Submission | Grades Education</title>
-    <meta name="description" content="Submit your thesis or dissertation for analysis with Isocrates.">
+    <meta name="description"
+        content="Submit a long-form academic document for argument-structure review with Isocrates.">
     <link rel="stylesheet" href="style.css">
     <style>
         .form-label-secondary {
@@ -66,7 +67,7 @@
                 <h2>Isocrates</h2>
                 <p>Argumentative Assessment</p>
                 <p style="margin-top: 2rem; font-size: 0.95rem; line-height: 1.6;">
-                    Submit your thesis or dissertation for an analysis of its argumentative structure.
+                    Submit a long-form academic document for review of its argumentative structure.
                     All files are processed securely and automatically deleted after analysis.
                 </p>
             </div>
@@ -86,8 +87,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="thesis-title">Thesis or Dissertation Title</label>
-                    <input type="text" id="thesis-title" name="thesisTitle" placeholder="Full Title" required>
+                    <label for="submission-title">Submission Title</label>
+                    <input type="text" id="submission-title" name="submissionTitle" placeholder="Full title" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -155,13 +156,13 @@
                 });
 
                 if (response.ok) {
-                    alert('✅ Submission successful! You will receive results via email shortly.');
+                    alert('Submission successful. You will receive results via email shortly.');
                     e.target.reset();
                 } else {
                     throw new Error('Submission failed');
                 }
             } catch (error) {
-                alert('❌ Error during submission. Please try again or contact support.');
+                alert('Error during submission. Please try again or contact support.');
                 console.error('Submission error:', error);
             }
         });
