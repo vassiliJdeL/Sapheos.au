@@ -25,10 +25,26 @@
 
         .team-grid .card {
             padding: 1.75rem;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .team-grid .card h3 {
             font-size: 1.15rem;
+        }
+
+        .team-role {
+            opacity: 0.9;
+            font-weight: 600;
+            color: var(--text-heading);
+        }
+
+        .team-grid .read-more-hint {
+            margin-top: auto;
+            padding-top: 1rem;
         }
 
         .team-photo {
@@ -84,59 +100,44 @@
         <div class="team-grid">
             <!-- Vassili -->
             <a href="vassili.html" class="card-link">
-                <div class="card team-card" style="text-align: center;">
+                <div class="card team-card">
                     <img src="vassili.jpg" alt="Dr. Vassili Joannidès de Lautour" class="team-photo">
                     <h3>Dr. Vassili Joannidès de Lautour</h3>
-                    <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">Chairman of the board, CEO
+                    <p class="team-role">Chairman of the board, CEO
                         world</p>
-                    <p class="team-card-intro">
-                        Institutional leadership, quality review, and academic governance.
-                    </p>
-                    <p class="read-more-hint">View full profile &rarr;</p>
+                    <p class="read-more-hint">See full profile &rarr;</p>
                 </div>
             </a>
 
             <!-- Lazaro -->
             <a href="lazaro.html" class="card-link">
-                <div class="card team-card" style="text-align: center;">
+                <div class="card team-card">
                     <img src="lazaro.jpg" alt="Dr. Lazaro Mederos" class="team-photo">
                     <h3>Dr. Lazaro Mederos</h3>
-                    <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">CEO &ndash; Americas, COO
+                    <p class="team-role">CEO &ndash; Americas, COO
                         world</p>
-                    <p class="team-card-intro">
-                        Academic operations, curriculum implementation, and assessment program design.
-                    </p>
-                    <p class="read-more-hint">View full profile &rarr;</p>
+                    <p class="read-more-hint">See full profile &rarr;</p>
                 </div>
             </a>
 
             <!-- Rachael -->
             <a href="rachael.html" class="card-link">
-                <div class="card team-card" style="text-align: center;">
+                <div class="card team-card">
                     <img src="rachael-team.png" alt="Rachael de Lautour" class="team-photo">
                     <h3>Rachael de Lautour</h3>
-                    <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">Publishing & Communication
+                    <p class="team-role">Publishing & Communication
                     </p>
-                    <p class="team-card-intro">
-                        20+ years of editorial expertise in standards-aligned documentation and institutional
-                        communication.
-                    </p>
-                    <p class="read-more-hint">View full profile &rarr;</p>
+                    <p class="read-more-hint">See full profile &rarr;</p>
                 </div>
             </a>
 
             <!-- Mirela -->
             <a href="mirela.html" class="card-link">
-                <div class="card team-card" style="text-align: center;">
+                <div class="card team-card">
                     <img src="mirela.jpg" alt="Mirela Quesnel" class="team-photo">
                     <h3>Mirela Quesnel</h3>
-                    <p style="opacity: 0.9; font-weight: 600; color: var(--text-heading);">CFO</p>
-                    <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.85em;">System Security &
-                        Compliance</p>
-                    <p class="team-card-intro">
-                        Specialist in regulated environments, data protection, and cybersecurity compliance.
-                    </p>
-                    <p class="read-more-hint">View full profile &rarr;</p>
+                    <p class="team-role">CFO</p>
+                    <p class="read-more-hint">See full profile &rarr;</p>
                 </div>
             </a>
         </div>
