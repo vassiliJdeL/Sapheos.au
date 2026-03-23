@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Grades Education</title>
+    <meta name="description" content="Get in touch with Grades Education for demos, partnerships, and inquiries.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="tools.html">Tools</a>
+                <a href="compliance.html">Compliance</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html" class="btn-primary active">Contact Us</a>
+                <a href="login.html">Login</a>
+                <div class="lang-switch">
+                    <a href="contact.html" class="active-lang" title="English">🇳🇿</a>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Partner with Us</h2>
+                <p>Interested in integrating Grades Education tools into your institution? We'd love to hear from you.
+                </p>
+                <ul class="contact-details">
+                    <li>📧 hello@gradeseducation.com</li>
+                    <li>📞 (555) 012-3456</li>
+                    <li>📍 Innovation Hub, Tech District, EU</li>
+                </ul>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institution / Organization</label>
+                    <input type="text" id="institution" placeholder="University or Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Work Email">
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-type">Inquiry Type</label>
+                    <select id="inquiry-type"
+                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
+                        <option value="demo">Request a Demo</option>
+                        <option value="audit">Institutional Audit (Evaluation & Integrity)</option>
+                        <option value="partnership">Strategic Partnership</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your needs..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Request Demo</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Grades Education</div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Grades Education. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Scholar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

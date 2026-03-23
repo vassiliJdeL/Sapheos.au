@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parmenides - Submission | Grades Education</title>
+    <meta name="description" content="Thesis submission for reference verification.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-label-secondary {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="tools.html" class="active">Tools</a>
+                <a href="compliance.html">Compliance</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="login.html">Login</a>
+                <div class="lang-switch">
+                    <a href="parmenides-form.html" class="active-lang" title="English">🇳🇿</a>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="parmenides_portrait.png" alt="Parmenides"
+                    style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 2px solid var(--border);">
+                <h2>Parmenides</h2>
+                <p>Thesis submission</p>
+                <p style="margin-top: 2rem; font-size: 0.95rem; line-height: 1.6;">
+                    Please fill out this form to submit your work for reference verification.
+                </p>
+
+                <div
+                    style="margin-top: 3rem; padding: 1.5rem; background: rgba(93, 0, 30, 0.2); border-left: 3px solid var(--primary); border-radius: var(--radius-sm);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-heading);">Important Information</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-body);">
+                        Ensure your file is in PDF, DOC, or DOCX format.
+                    </p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="parmenides-form" method="POST" enctype="multipart/form-data">
+
+                <!-- Student Number -->
+                <div class="form-group">
+                    <label for="student-number">Student Number <span class="required">*</span></label>
+                    <input type="text" id="student-number" name="studentNumber" placeholder="Ex: 202300123" required>
+                </div>
+
+                <!-- Surname -->
+                <div class="form-group">
+                    <label for="surname">Surname <span class="required">*</span></label>
+                    <input type="text" id="surname" name="surname" placeholder="Your surname" required>
+                </div>
+
+                <!-- Title -->
+                <div class="form-group">
+                    <label for="title">Title <span class="required">*</span></label>
+                    <input type="text" id="title" name="title" placeholder="Thesis title" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="email@university.edu" required>
+                </div>
+
+                <!-- Language -->
+                <div class="form-group">
+                    <label for="language">Language <span class="required">*</span></label>
+                    <select id="language" name="language" required
+                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
+                        <option value="" disabled selected>Select...</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+
+                <!-- Document Upload -->
+                <div class="form-group">
+                    <label for="file-upload">Document <span class="required">*</span></label>
+                    <input type="file" id="file-upload" name="file" accept=".pdf,.doc,.docx,.txt" required
+                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
+                    <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Max size: 10MB</p>
+                </div>
+
+                <!-- GDPR -->
+                <div class="form-group" style="margin-top: 2rem;">
+                    <label style="margin-bottom: 0.5rem;">GDPR <span class="required">*</span></label>
+                    <div
+                        style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: var(--radius-sm);">
+                        <input type="radio" id="consent" name="consent" value="accepted" required
+                            style="width: auto; margin-top: 0.3rem; margin-right: 0.5rem;">
+                        <label for="consent" style="margin: 0; font-size: 0.85rem; line-height: 1.5; cursor: pointer;">
+                            I consent to the use of my personal data for the mere purpose of this assessment. Neither
+                            personal data nor any uploaded file will be stored. They will be automatically deleted at
+                            the end of the assessment process or in case of error.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary full-width" style="margin-top: 2rem;">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Grades Education</div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Grades Education. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Scholar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Webhook configuration
+        // IMPORTANT: Replace this with your actual n8n Production Webhook URL
+        const WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
+
+        // Redirect URL on success
+        const REDIRECT_URL = 'https://vassilijdel.github.io/formulaire-m-moires/merci.html';
+
+        document.getElementById('parmenides-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            const formData = new FormData(e.target);
+            formData.append('timestamp', new Date().toISOString());
+
+            try {
+                // Post to n8n webhook
+                const response = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    // Success - Redirect
+                    window.location.href = REDIRECT_URL;
+                } else {
+                    throw new Error('Server responded with error');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('Error submitting form. Please try again.');
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

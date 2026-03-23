@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diotima | Grades Education</title>
+    <meta name="description"
+        content="Diotima: Provenance & Authenticity Verification. Distinguishing human reasoning from synthetic generation.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tool-detail-header {
+            text-align: left;
+            padding: 6rem 1rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tool-philosophy {
+            text-align: justify;
+        }
+
+        .tool-icon-large {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            border: 2px solid var(--border);
+        }
+
+        .tool-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tool-tagline {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-weight: 500;
+        }
+
+        .tool-philosophy {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-heading);
+            margin-bottom: 4rem;
+        }
+
+        .video-placeholder-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .video-placeholder {
+            aspect-ratio: 16/9;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .video-play-btn {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .tool-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="tools.html" class="active">Tools</a>
+                <a href="compliance.html">Compliance</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="login.html">Login</a>
+                <div class="lang-switch">
+                    <a href="diotima.html" class="active-lang" title="English">🇳🇿</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tool-detail-header">
+            <div class="tool-header-layout">
+                <div class="tool-header-image">
+                    <img src="diotima_portrait.png" alt="Diotima">
+                </div>
+                <div class="tool-header-text">
+                    <h1 class="tool-title">Diotima</h1>
+                    <p class="tool-tagline">Authenticity and provenance of reasoning</p>
+                </div>
+            </div>
+
+            <div class="tool-philosophy">
+                <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-heading); margin-bottom: 2rem;">
+                    Diotima is a device for analyzing the authenticity of student work, intervening upstream of
+                    assessment to secure its conditions.
+                </p>
+
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-heading);">
+                    Diotima examines a work based on three complementary levels:</h3>
+
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                    <li style="margin-bottom: 1rem; padding-left: 0;">
+                        <span style="color: white; font-weight: 600;">Stylistic and semantic:</span> coherence of
+                        expression, continuity of voice, lexical stability
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0;">
+                        <span style="color: white; font-weight: 600;">Cognitive:</span> traces of progressive
+                        elaboration of reasoning, reformulations, adjustments
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0;">
+                        <span style="color: white; font-weight: 600;">Argumentative:</span> logical dependence between
+                        premises and conclusions
+                    </li>
+                </ul>
+
+                <p>
+                    This analysis allows for appreciating the respective place of human intellectual activity and
+                    automated assistance in the submitted production.
+                </p>
+                <br>
+                <p>
+                    In a context where automated productions can imitate the form of human reasoning, only an automated
+                    analysis device allows for rigorously qualifying its origin, so that assessment focuses on reasoning
+                    whose provenance is clearly established.
+                </p>
+
+                <h3 style="font-size: 1.3rem; margin-top: 3rem; margin-bottom: 1rem; color: var(--text-heading);">Role
+                    in the assessment chain</h3>
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                    <li style="margin-bottom: 1rem; padding-left: 0;">
+                        <span style="color: white; font-weight: 600;">Upstream:</span> establishment of authenticity and
+                        provenance of reasoning
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0;">
+                        <span style="color: white; font-weight: 600;">Downstream:</span> assessment based on
+                        intellectually defensible work
+                    </li>
+                </ul>
+            </div>
+
+            <div class="video-placeholder-container">
+                <div class="video-placeholder">
+                    <div class="video-play-btn">▶</div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    Demo: Authenticity analysis applied to a student paper.
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="diotima-form.html" class="btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Test
+                    Diotima</a>
+                <div style="margin-top: 2rem;">
+                    <a href="tools.html" style="color: var(--text-muted); text-decoration: none;">&larr; Back to
+                        Tools</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Grades Education</div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Grades Education. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

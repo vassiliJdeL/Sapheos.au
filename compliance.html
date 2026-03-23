@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance | Grades Education</title>
+    <meta name="description"
+        content="Regulatory information on data protection, the AI Act, and system security at Grades Education.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            text-align: center;
+            padding: 6rem 1rem 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 6rem;
+        }
+
+        .hub-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-card);
+            padding: 2.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .hub-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-heading);
+        }
+
+        .hub-card p {
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .hub-card .card-arrow {
+            color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hub-card:hover .card-arrow {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="tools.html">Tools</a>
+                <a href="compliance.html" class="active">Compliance</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="login.html">Login</a>
+                <div class="lang-switch">
+                    <a href="compliance.html" class="active-lang" title="English">🇳🇿</a>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Compliance</h1>
+            <p>Grades Education is committed to the strictest standards regarding data protection, trusted AI, and
+                system security.</p>
+        </div>
+
+        <div class="hub-grid">
+            <!-- GDPR Card -->
+            <a href="gdpr.html" class="hub-card">
+                <h3>Data Protection (GDPR)</h3>
+                <p>Full GDPR compliance with sovereign EU hosting, no data training, and guaranteed rights to erasure
+                    and portability.</p>
+                <span class="card-arrow">Read more &rarr;</span>
+            </a>
+
+            <!-- AI Act Card -->
+            <a href="ai-act.html" class="hub-card">
+                <h3>Trusted AI & AI Act</h3>
+                <p>Anticipating EU AI Act requirements for high-risk systems: algorithmic transparency,
+                    human-in-the-loop, and bias testing.</p>
+                <span class="card-arrow">Read more &rarr;</span>
+            </a>
+
+            <!-- NIS2 Card -->
+            <a href="nis2.html" class="hub-card">
+                <h3>System Security & NIS2</h3>
+                <p>Cybersecurity standards aligned with ANSSI recommendations and NIS2 Directive to ensure availability,
+                    integrity, and confidentiality.</p>
+                <span class="card-arrow">Read more &rarr;</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Grades Education</div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Grades Education. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
+</html>

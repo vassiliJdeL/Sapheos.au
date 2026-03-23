@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIS2 & System Security | Grades Education</title>
+    <meta name="description"
+        content="Grades Education cybersecurity measures: NIS2 compliance, ANSSI recommendations, and system integrity.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .compliance-content {
+            max-width: 800px;
+            margin: 6rem auto;
+            text-align: left;
+        }
+
+        .compliance-section p {
+            font-size: 1.1rem;
+            color: var(--text-body);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .compliance-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-body);
+            line-height: 1.8;
+        }
+
+        .compliance-section li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="tools.html">Tools</a>
+                <a href="compliance.html" class="active">Compliance</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="login.html">Login</a>
+                <div class="lang-switch">
+                    <a href="nis2.html" class="active-lang" title="English">🇳🇿</a>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="compliance-content">
+            <div style="margin-bottom: 2rem;">
+                <a href="compliance.html"
+                    style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">&larr; Back to
+                    Compliance</a>
+            </div>
+
+            <h1
+                style="font-size: 3rem; margin-bottom: 2rem; background: var(--gradient-text); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                System Security & NIS2
+            </h1>
+
+            <div class="compliance-section">
+                <p>The security of academic integrity relies on the security of the systems that support it.
+                    Grades Education designs and operates its tools as <strong>critical academic
+                        infrastructure</strong>, integrating cybersecurity from the system design phase.</p>
+
+                <p>Our approach favors <strong>structural technical measures</strong> aimed at limiting attack surfaces
+                    and the potential impact of an incident.</p>
+
+                <h3>Applied Security Principles</h3>
+
+                <ul>
+                    <li><strong>Server Security</strong><br>
+                        Servers hosting Grades Education services are configured according to strict security standards:
+                        access control, service partitioning, regular updates, and continuous monitoring.
+                        Hosting in France and limiting external dependencies contribute to reducing risks related to the
+                        technical chain.</li>
+
+                    <li><strong>Tool Security</strong><br>
+                        Tools are designed to limit privileges, restrict access to only necessary functionalities, and
+                        avoid any unnecessary exposure.
+                        The absence of persistent storage of personal data structurally reduces the potential
+                        consequences of a compromise.</li>
+
+                    <li><strong>Exchange Security</strong><br>
+                        Data exchanges between users, systems, and technical components are protected by adapted
+                        encryption mechanisms, guaranteeing the confidentiality and integrity of flows throughout the
+                        processing duration.</li>
+
+                    <li><strong>Risk Surface Reduction</strong><br>
+                        The automatic deletion of data after processing, combined with the absence of history and
+                        persistent databases, strongly limits the interest and impact of an attack targeting data.</li>
+                </ul>
+
+                <h3>Cybersecurity Skills and Culture</h3>
+
+                <p>The technical and organizational choices implemented by Grades Education rely on <strong>internal
+                        cybersecurity skills</strong>, developed in demanding institutional and European contexts.</p>
+
+                <p>Team members are regularly involved in <strong>spaces for reflection, training, and
+                        awareness</strong> regarding cybersecurity and the intersecting issues of artificial
+                    intelligence and information system protection.
+                    This dynamic notably includes:</p>
+
+                <ul>
+                    <li>interventions and exchanges within academic and professional frameworks dedicated to
+                        cybersecurity and AI,</li>
+                    <li>engagement in <strong>continuous cybersecurity training</strong> paths, to maintain a high level
+                        of requirement and skill updating.</li>
+                </ul>
+
+                <h3>Alignment with the NIS2 Directive</h3>
+
+                <p>The measures implemented follow a logic of alignment with the requirements of the European NIS2
+                    Directive, particularly regarding:</p>
+
+                <ul>
+                    <li>risk management,</li>
+                    <li>service continuity and availability,</li>
+                    <li>protection against cybersecurity incidents.</li>
+                </ul>
+
+                <p>Security is not treated as an additional layer, but as an <strong>intrinsic property of the
+                        systems</strong> operated by Grades Education.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Grades Education</div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Grades Education. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
+</html>
