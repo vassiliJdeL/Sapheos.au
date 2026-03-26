@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xenophon - Submission | Grades Education</title>
-    <meta name="description" content="Submit your work for applied skills value assessment with Xenophon.">
+    <title>Euclid - Submission | Grades Education</title>
+    <meta name="description"
+        content="Submit a long-form academic document for argument-structure review with Euclid.">
     <link rel="stylesheet" href="style.css">
     <style>
         .form-label-secondary {
@@ -61,83 +62,62 @@
     <main class="container">
         <div class="contact-container">
             <div class="contact-info">
-                <img src="xenophon_portrait.png" alt="Xenophon"
+                <img src="euclid_portrait.png" alt="Euclid"
                     style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 2px solid var(--border);">
-                <h2>Xenophon</h2>
-                <p>Academic Value & Relevance</p>
+                <h2>Euclid</h2>
+                <p>Argumentative Assessment</p>
                 <p style="margin-top: 2rem; font-size: 0.95rem; line-height: 1.6;">
-                    Please fill out this form to submit your work for Xenophon academic value analysis.
+                    Submit a long-form academic document for review of its argumentative structure.
+                    All files are processed securely and automatically deleted after analysis.
                 </p>
-
-                <div
-                    style="margin-top: 3rem; padding: 1.5rem; background: rgba(93, 0, 30, 0.2); border-left: 3px solid var(--primary); border-radius: var(--radius-sm);">
-                    <h4 style="margin-bottom: 0.5rem; color: var(--text-heading);">Important Information</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-body);">
-                        Ensure your file is in PDF, DOC, or DOCX format.
-                    </p>
-                </div>
             </div>
-
-            <form class="contact-form" id="xenophon-form" method="POST" enctype="multipart/form-data">
-
-                <!-- Student Number -->
+            <form class="contact-form" id="euclid-form" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="student-number">Student Number <span class="required">*</span></label>
-                    <input type="text" id="student-number" name="studentNumber" placeholder="Ex: 202300123" required>
+                    <label for="student-number">Student Number</label>
+                    <input type="text" id="student-number" name="studentNumber" placeholder="Student ID" required>
                 </div>
-
-                <!-- Surname -->
-                <div class="form-group">
-                    <label for="surname">Surname <span class="required">*</span></label>
-                    <input type="text" id="surname" name="surname" placeholder="Your surname" required>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Family Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="Given Name" required>
+                    </div>
                 </div>
-
-                <!-- Title -->
                 <div class="form-group">
-                    <label for="title">Title <span class="required">*</span></label>
-                    <input type="text" id="title" name="title" placeholder="Work Title" required>
+                    <label for="submission-title">Submission Title</label>
+                    <input type="text" id="submission-title" name="submissionTitle" placeholder="Full title" required>
                 </div>
-
-                <!-- Email -->
                 <div class="form-group">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="email@university.edu" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                 </div>
-
-                <!-- Language -->
                 <div class="form-group">
-                    <label for="language">Language <span class="required">*</span></label>
+                    <label for="language">Language</label>
                     <select id="language" name="language" required
                         style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
                         <option value="" disabled selected>Select...</option>
                         <option value="US English">US English</option>
                     </select>
                 </div>
-
-                <!-- Document Upload -->
                 <div class="form-group">
-                    <label for="file-upload">Document <span class="required">*</span></label>
+                    <label for="file-upload">File Upload</label>
                     <input type="file" id="file-upload" name="file" accept=".pdf,.doc,.docx,.txt" required
                         style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
-                    <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Max size: 10MB</p>
                 </div>
-
-                <!-- Privacy Notice -->
-                <div class="form-group" style="margin-top: 2rem;">
-                    <label style="margin-bottom: 0.5rem;">Privacy Notice <span class="required">*</span></label>
-                    <div
-                        style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: var(--radius-sm);">
-                        <input type="radio" id="consent" name="consent" value="accepted" required
-                            style="width: auto; margin-top: 0.3rem; margin-right: 0.5rem;">
-                        <label for="consent" style="margin: 0; font-size: 0.85rem; line-height: 1.5; cursor: pointer;">
-                            I consent to the use of my personal data for the sole purpose of this assessment. Personal
-                            data and uploaded files are not retained beyond processing and are automatically deleted
-                            after completion or in the event of an error.
-                        </label>
-                    </div>
+                <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                    <input type="radio" id="consent" name="consent" value="accepted" required
+                        style="width: auto; margin-top: 0.25rem;">
+                    <label for="consent" style="margin: 0; font-size: 0.9rem; line-height: 1.6;">
+                        <strong>Privacy Notice:</strong> I consent to the use of my personal data for the sole purpose
+                        of this assessment.
+                        Personal data and uploaded files are not retained beyond processing and are automatically
+                        deleted after completion or in the event of an error.
+                    </label>
                 </div>
-
-                <button type="submit" class="btn-primary full-width" style="margin-top: 2rem;">Submit</button>
+                <button type="submit" class="btn-primary full-width">Submit</button>
             </form>
         </div>
     </main>
@@ -159,17 +139,12 @@
 
     <script src="script.js"></script>
     <script>
-        // Webhook configuration
+        // Webhook configuration - Replace with your n8n webhook URL
         const WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
-        const REDIRECT_URL = 'https://vassilijdel.github.io/formulaire-m-moires/merci.html';
 
-        document.getElementById('xenophon-form').addEventListener('submit', async (e) => {
+        // Form submission
+        document.getElementById('euclid-form').addEventListener('submit', async (e) => {
             e.preventDefault();
-
-            const btn = e.target.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
 
             const formData = new FormData(e.target);
             formData.append('timestamp', new Date().toISOString());
@@ -181,15 +156,14 @@
                 });
 
                 if (response.ok) {
-                    window.location.href = REDIRECT_URL;
+                    alert('Submission successful. You will receive results via email shortly.');
+                    e.target.reset();
                 } else {
-                    throw new Error('Server responded with error');
+                    throw new Error('Submission failed');
                 }
             } catch (error) {
+                alert('Error during submission. Please try again or contact support.');
                 console.error('Submission error:', error);
-                alert('Error submitting form. Please try again.');
-                btn.textContent = originalText;
-                btn.disabled = false;
             }
         });
     </script>
