@@ -37,35 +37,147 @@
     </header>
 
     <!-- Hero Section -->
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Securing the Value of<br>Academic Degrees</h1>
-            <p>As generative AI reshapes coursework, institutions need stronger evidence for grading, progression, and
-                program-level quality decisions.</p>
-        </div>
-    </section>
-
-    <!-- Institutional Necessity Block -->
-    <section class="container" style="padding: 0rem 1rem 3rem; text-align: center; margin-top: -1rem;">
-        <div
-            style="max-width: 800px; margin: 0 auto; background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 1rem; border: 1px solid var(--border);">
-            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-heading);">Putting Institutions Back
-                in Control</h2>
-            <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
-                When AI-generated content is hard to distinguish from student work, institutions need stronger
-                assessment signals.
-                Grades Education provides integrated infrastructure for engagement, evaluation, integrity,
-                and verification.
-                <br><br>
-                <strong>Defensible decisions, consistent standards, and human-led review.</strong>
+    <section class="hero hero--top-focus">
+        <div class="container hero-content hero-content--top-focus">
+            <h1 class="hero-title">
+                <span class="hero-line">How much does evaluation cost you?</span>
+            </h1>
+            <p class="hero-subheadline hero-subheadline--minor">
+                <span class="hero-subline">Probably more than you see</span><br>
+                <span class="hero-subline">You're not counting everything</span>
             </p>
-            <div class="hero-buttons" style="margin-top: 2.5rem; justify-content: center;">
-                <a href="tools.html" class="btn-primary">View Tools</a>
-                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            <p class="hero-subheadline hero-subheadline--major">
+                <span class="hero-subline">Faculty review</span><br>
+                <span class="hero-subline">Admin coordination</span><br>
+                <span class="hero-subline">It gets redone</span>
+            </p>
+            <p class="hero-pivot">
+                <span class="hero-subline hero-subline-emphasis">Are you sure that's it?</span>
+            </p>
+            <div class="hero-buttons hero-cta">
+                <a href="contact.html" class="btn-primary">Audit your evaluation process</a>
+                <a href="tools.html" class="btn-secondary">Stand up to scrutiny</a>
             </div>
         </div>
     </section>
+    <style>
+        .hero.hero--top-focus {
+            display: block;
+            min-height: calc(100vh - 210px);
+            padding: 2.1rem 0 1.2rem;
+            text-align: center;
+        }
+
+        .hero-content--top-focus {
+            max-width: 780px;
+            text-align: center;
+        }
+
+        .hero--top-focus .hero-title {
+            margin: 0 auto 28px;
+            font-size: clamp(56px, 6vw, 64px);
+            line-height: 1.1;
+            font-weight: 600;
+            letter-spacing: -0.014em;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .hero--top-focus .hero-line {
+            display: block;
+            white-space: normal;
+            text-align: center;
+        }
+
+        .hero--top-focus .hero-subheadline {
+            max-width: 800px;
+            line-height: 1.35;
+            opacity: 0.94;
+            margin: 0 auto;
+        }
+
+        .hero--top-focus .hero-subheadline--minor {
+            margin-bottom: 36px;
+            font-size: clamp(22px, 2.4vw, 24px);
+            line-height: 1.4;
+            font-weight: 500;
+            opacity: 0.88;
+        }
+
+        .hero--top-focus .hero-subheadline--major {
+            margin-bottom: 0;
+            font-size: clamp(16px, 1.75vw, 18px);
+            line-height: 1.65;
+            font-weight: 400;
+            opacity: 0.78;
+        }
+
+        .hero--top-focus .hero-subline {
+            display: inline-block;
+        }
+
+        .hero--top-focus .hero-pivot {
+            margin: 44px auto 52px;
+            max-width: 800px;
+            font-size: clamp(18px, 2vw, 20px);
+            line-height: 1.5;
+        }
+
+        .hero--top-focus .hero-subline-emphasis {
+            font-weight: 600;
+            color: var(--text-heading);
+        }
+
+        @media (min-width: 901px) {
+            .hero--top-focus .hero-subline {
+                white-space: nowrap;
+            }
+        }
+
+        .hero--top-focus .hero-cta {
+            margin-top: 0;
+            gap: 0.72rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero--top-focus .hero-cta a {
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .hero--top-focus .hero-cta .btn-secondary {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 900px) {
+            .hero.hero--top-focus {
+                min-height: auto;
+                padding: 1.75rem 0 1.05rem;
+            }
+
+            .hero--top-focus .hero-title {
+                font-size: clamp(2.25rem, 8.4vw, 3.25rem);
+                margin-bottom: 24px;
+            }
+
+            .hero--top-focus .hero-subheadline--minor {
+                font-size: clamp(1.25rem, 5.2vw, 1.5rem);
+            }
+
+            .hero--top-focus .hero-line {
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero--top-focus .hero-cta a {
+                width: 100%;
+            }
+        }
+    </style>
 
     <!-- Footer -->
     <footer>
