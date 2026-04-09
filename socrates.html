@@ -63,25 +63,14 @@
         .video-placeholder {
             aspect-ratio: 16/9;
             background: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border-radius: 8px;
-            color: var(--text-light);
-            font-size: 1.2rem;
-            position: relative;
+            overflow: hidden;
         }
 
-        .video-play-btn {
-            width: 64px;
-            height: 64px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .video-placeholder video {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
         .tool-features {
@@ -130,24 +119,34 @@
                 </div>
                 <div class="tool-header-text">
                     <h1 class="tool-title">Socrates</h1>
-                    <p class="tool-tagline">Authentic Student Engagement</p>
+                    <p class="tool-tagline">Structured questioning before writing</p>
 
                 </div>
             </div>
 
             <div class="tool-philosophy">
-                <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-heading); margin-bottom: 2rem;">
-                    Socrates is a guided questioning tool used before grading. It helps students make their reasoning
-                    explicit before they submit assessed work.
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--text-heading);">What it produces</h3>
+
+                <p style="margin-bottom: 1.5rem;">
+                    Socrates produces a structured sequence of questions that forces the student to define:
                 </p>
-                <p>
-                    Socrates runs structured question sequences that prompt students to formulate, clarify, and justify
-                    their thinking before drafting an assignment or capstone submission.
+                <ul style="margin: 0 0 3rem 1.2rem; color: var(--text-heading);">
+                    <li>the topic</li>
+                    <li>the research question</li>
+                    <li>the argument</li>
+                </ul>
+                <p style="margin-bottom: 3rem;">
+                    before any writing begins.
                 </p>
-                <br>
-                <p>
-                    That process creates a clearer evidence trail, so later assessment is based on visible thinking,
-                    not only on polished final text.
+
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--text-heading);">What makes it
+                    different</h3>
+                <p style="margin-bottom: 3rem;">
+                    Most tools generate answers.<br>
+                    Socrates does not generate content.<br>
+                    It forces the student to make their reasoning explicit.<br>
+                    The output is not text.<br>
+                    It is a clarified line of thinking.
                 </p>
             </div>
 
@@ -155,7 +154,10 @@
 
             <div class="video-placeholder-container">
                 <div class="video-placeholder">
-                    <div class="video-play-btn">▶</div>
+                    <video controls muted playsinline preload="metadata">
+                        <source src="videos/socrates-full.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
                     Illustration: Guided questioning for developing a complex academic question.
@@ -163,22 +165,20 @@
             </div>
 
             <div class="tool-philosophy">
-                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-heading); text-align: center;">
-                    Institutional Value</h3>
-                <div class="tool-features">
-                    <div class="feature-item">
-                        <h3 style="color: white; text-align: center;">Reasoning is made explicit before any written
-                            submission</h3>
-                    </div>
-                    <div class="feature-item">
-                        <h3 style="color: white; text-align: center;">Student engagement becomes visible and auditable
-                        </h3>
-                    </div>
-                    <div class="feature-item">
-                        <h3 style="color: white; text-align: center;">Assessment no longer depends only on the
-                            submitted text</h3>
-                    </div>
-                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--text-heading);">Why it matters</h3>
+
+                <p style="margin-bottom: 3rem;">
+                    When reasoning remains implicit, assessment relies on the final text alone.<br>
+                    Socrates makes the thinking visible before submission.
+                </p>
+
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--text-heading);">What it costs not to
+                    have it</h3>
+                <ul style="margin: 0 0 3rem 1.2rem; color: var(--text-heading);">
+                    <li>topics remain unclear</li>
+                    <li>research questions stay weak</li>
+                    <li>supervision cycles repeat</li>
+                </ul>
             </div>
 
 
