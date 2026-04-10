@@ -3,9 +3,9 @@
 
 :root {
     /* Brand Colors extracted from socrate.grades-education.eu */
-    --bg-center: #253E49;
-    --bg-mid: #1E3340;
-    --bg-outer: #162833;
+    --bg-center: #313A43;
+    --bg-mid: #28313A;
+    --bg-outer: #1E2730;
 
     --text-heading: #F2F3F5;
     --text-body: #E8ECF0;
@@ -13,11 +13,11 @@
     --primary: #6A0F2C;
     --primary-hover: #7D1B3B;
 
-    --surface: rgba(240, 244, 248, 0.045);
-    --border: rgba(232, 236, 240, 0.14);
+    --surface: rgba(242, 245, 248, 0.04);
+    --border: rgba(232, 236, 240, 0.13);
 
     --gradient-main: radial-gradient(circle at top center, var(--bg-center), var(--bg-mid), var(--bg-outer));
-    --gradient-text: linear-gradient(to right, #F2F3F5, #DDD6C2);
+    --gradient-text: linear-gradient(to right, #F2F3F5, #DDE3EA);
 
     --radius: 50px;
     /* Pill shape for buttons */
@@ -165,9 +165,9 @@ a {
 
 .site-logo {
     display: block;
-    height: 88px;
+    height: 46px;
     width: auto;
-    transform: translateY(4px);
+    transform: translateY(0);
 }
 
 .highlight {
