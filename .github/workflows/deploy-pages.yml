@@ -17,6 +17,9 @@ concurrency:
 
 jobs:
   deploy:
+    # GitHub Pages deploy is only runnable for public repos (or paid private Pages setup).
+    # Skip automatically on private repositories to avoid failing push workflows.
+    if: ${{ !github.event.repository.private }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
