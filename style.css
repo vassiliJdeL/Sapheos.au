@@ -3,9 +3,9 @@
 
 :root {
     /* Brand Colors extracted from socrate.grades-education.eu */
-    --bg-center: #313A43;
-    --bg-mid: #28313A;
-    --bg-outer: #1E2730;
+    --bg-center: #2C323A;
+    --bg-mid: #252C33;
+    --bg-outer: #1D232B;
 
     --text-heading: #F2F3F5;
     --text-body: #E8ECF0;
@@ -165,7 +165,7 @@ a {
 
 .site-logo {
     display: block;
-    height: 46px;
+    height: 34px;
     width: auto;
     transform: translateY(0);
 }
