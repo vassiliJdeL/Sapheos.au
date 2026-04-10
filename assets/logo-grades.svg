@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" fill="none">
+  <title>Grades Education logo concept — corrected alignment</title>
+  <desc>Transparent-background logo with three aligned, equally spaced dots, a vertical separator, and the words Grades Education in white.</desc>
+
+  <!-- transparent background -->
+  <g fill="#F4F2EE" stroke="#F4F2EE" stroke-linecap="round" stroke-linejoin="round">
+    <!-- three aligned, equally spaced dots -->
+    <circle cx="112" cy="192" r="11"/>
+    <circle cx="154" cy="160" r="11"/>
+    <circle cx="196" cy="128" r="11"/>
+
+    <!-- separator -->
+    <path d="M236 78 V210" stroke-width="6"/>
+
+    <!-- wordmark -->
+    <text x="255" y="160"
+          font-family="'Source Sans 3', sans-serif"
+          font-size="64"
+          font-weight="400"
+          letter-spacing="0">
+      Grades Education
+    </text>
+  </g>
+</svg>

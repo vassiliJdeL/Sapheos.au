@@ -7,6 +7,7 @@
     <title>Aristotle - Submission | Grades Education</title>
     <meta name="description" content="Submit your work for applied skills value assessment with Aristotle.">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         .form-label-secondary {
             display: none;
@@ -39,7 +40,7 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Grades <span class="highlight">Education</span></a>
+            <a href="index.html" class="logo"><img src="assets/logo-grades.svg" alt="Grades Education" class="site-logo"></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="why-choose-us.html">Not a grading tool</a>
@@ -108,7 +109,7 @@
                 <div class="form-group">
                     <label for="language">Language <span class="required">*</span></label>
                     <select id="language" name="language" required
-                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
+                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: var(--font-main);">
                         <option value="" disabled selected>Select...</option>
                         <option value="US English">US English</option>
                     </select>
@@ -118,7 +119,7 @@
                 <div class="form-group">
                     <label for="file-upload">Document <span class="required">*</span></label>
                     <input type="file" id="file-upload" name="file" accept=".pdf,.doc,.docx,.txt" required
-                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: 'Comfortaa', sans-serif;">
+                        style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-body); font-family: var(--font-main);">
                     <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Max size: 10MB</p>
                 </div>
 
@@ -145,7 +146,6 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">Grades Education</div>
             <div class="copyright">
                 &copy; <span id="year"></span> Grades Education. All rights reserved.
             </div>
