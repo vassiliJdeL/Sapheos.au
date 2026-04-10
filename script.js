@@ -47,40 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Handle Form Submissions (Mockup)
-    document.querySelectorAll('form').forEach(form => {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-
-            // Check if it's the login form
-            const isLogin = btn.textContent.includes('Sign In');
-            const originalText = btn.textContent;
-
-            if (isLogin) {
-                btn.textContent = 'Logging in...';
+    // Keep demo behavior only for login form.
+    const loginForm = document.querySelector('form');
+    if (loginForm) {
+        const loginBtn = loginForm.querySelector('button[type="submit"]');
+        if (loginBtn && loginBtn.textContent.includes('Sign In')) {
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const originalText = loginBtn.textContent;
+                loginBtn.textContent = 'Logging in...';
                 setTimeout(() => {
                     alert("This is a demo. In a real app, you would be logged in!");
-                    btn.textContent = originalText;
+                    loginBtn.textContent = originalText;
                 }, 500);
-            } else {
-                btn.textContent = 'Message Sent! ✅';
-                btn.style.backgroundColor = '#10b981'; // Green
-                btn.style.borderColor = '#10b981';
-
-                // Optional: Alert for more visibility
-                setTimeout(() => {
-                    alert("Thank you! We have received your request.");
-
-                    // Reset button after partial delay
-                    setTimeout(() => {
-                        btn.textContent = originalText;
-                        btn.style.backgroundColor = '';
-                        btn.style.borderColor = '';
-                        form.reset();
-                    }, 2000);
-                }, 100);
-            }
-        });
-    });
+            });
+        }
+    }
 });
