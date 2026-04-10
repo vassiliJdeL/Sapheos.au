@@ -3,26 +3,21 @@
 
 :root {
     /* Brand Colors extracted from socrate.grades-education.eu */
-    --bg-center: #0B4C5A;
-    --bg-mid: #063B46;
-    --bg-outer: #021C24;
+    --bg-center: #253E49;
+    --bg-mid: #1E3340;
+    --bg-outer: #162833;
 
-    --text-heading: #FDF3DB;
-    /* Cream */
-    --text-body: #FDF8F2;
-    /* Off-white */
+    --text-heading: #F2F3F5;
+    --text-body: #E8ECF0;
 
-    --primary: #5D001E;
-    /* Burgundy */
-    --primary-hover: #7A0028;
+    --primary: #6A0F2C;
+    --primary-hover: #7D1B3B;
 
-    --surface: rgba(255, 255, 255, 0.05);
-    /* Glassy feel for cards */
-    --border: rgba(253, 243, 219, 0.1);
+    --surface: rgba(240, 244, 248, 0.045);
+    --border: rgba(232, 236, 240, 0.14);
 
     --gradient-main: radial-gradient(circle at top center, var(--bg-center), var(--bg-mid), var(--bg-outer));
-    --gradient-text: linear-gradient(to right, #FDF3DB, #F0E68C);
-    /* Cream to Gold */
+    --gradient-text: linear-gradient(to right, #F2F3F5, #DDD6C2);
 
     --radius: 50px;
     /* Pill shape for buttons */
@@ -108,7 +103,7 @@ a {
 }
 
 .btn-secondary:hover {
-    background: rgba(253, 243, 219, 0.1);
+    background: rgba(232, 236, 240, 0.12);
     transform: translateY(-2px);
 }
 
@@ -352,10 +347,10 @@ a {
     color: var(--text-heading);
     opacity: 0.98;
     padding: 0.85rem 1.05rem;
-    border-left: 3px solid rgba(253, 243, 219, 0.6);
-    border-right: 3px solid rgba(253, 243, 219, 0.6);
+    border-left: 3px solid rgba(232, 236, 240, 0.55);
+    border-right: 3px solid rgba(232, 236, 240, 0.55);
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.035);
 }
 
 .hero-cta {
@@ -420,7 +415,7 @@ a {
     max-width: 720px;
     margin: 0.4rem auto 0.65rem;
     padding: 0.65rem 0.85rem;
-    border-left: 3px solid rgba(253, 243, 219, 0.65);
+    border-left: 3px solid rgba(232, 236, 240, 0.55);
     background: rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     font-size: 1rem;
