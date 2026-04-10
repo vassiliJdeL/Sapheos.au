@@ -19,18 +19,23 @@
             font-size: 1.1rem;
             color: var(--text-body);
             line-height: 1.8;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             opacity: 0.9;
         }
 
         .compliance-section ul {
             margin-left: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             color: var(--text-body);
             line-height: 1.8;
         }
 
         .compliance-section li {
+            margin-bottom: 0.6rem;
+        }
+
+        .compliance-section h3 {
+            margin-top: 3rem;
             margin-bottom: 1rem;
         }
     </style>
@@ -68,73 +73,64 @@
             </div>
 
             <h1
-                style="font-size: 3rem; margin-bottom: 2rem; background: var(--gradient-text); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                style="font-size: clamp(2rem, 4.5vw, 2.8rem); margin-bottom: 2rem; background: var(--gradient-text); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; white-space: nowrap; display: inline-block; padding-right: 0.08em;">
                 System Security & Cybersecurity
             </h1>
+            <p style="font-size: 1.1rem; color: var(--text-body); line-height: 1.8; margin-bottom: 1.5rem; opacity: 0.9;">
+                Security is designed, not added.
+            </p>
 
             <div class="compliance-section">
-                <p>The security of academic integrity relies on the security of the systems that support it.
-                    Grades Education designs and operates its tools as <strong>critical academic
-                        infrastructure</strong>, integrating cybersecurity from the system design phase.</p>
+                <p>NIST-aligned. Controlled environments. No persistent data exposure.</p>
+                <p>Grades Education operates its systems as controlled academic infrastructure, designed to minimize
+                    exposure, reduce attack surface, and ensure operational integrity.</p>
 
-                <p>Our approach uses <strong>structural technical controls</strong> to reduce attack surfaces
-                    and the potential impact of an incident.</p>
+                <p>Security is not managed at the interface level. It is embedded in how data is processed, how systems
+                    are isolated, and how outputs are generated and delivered.</p>
 
                 <h3>Applied Security Principles</h3>
 
                 <ul>
-                    <li><strong>Server Security</strong><br>
-                        Servers hosting Grades Education services are configured according to strict security standards:
-                        access control, service partitioning, regular updates, and continuous monitoring.
-                        Controlled infrastructure and limited external dependencies reduce supply-chain and operational
-                        risk.</li>
+                    <li><strong>Controlled execution environments</strong><br>
+                        All processing occurs in secured, access-controlled environments designed for institutional
+                        workloads. Execution contexts are isolated and monitored.</li>
 
-                    <li><strong>Tool Security</strong><br>
-                        Tools are designed to limit privileges, restrict access to only necessary functionalities, and
-                        avoid any unnecessary exposure.
-                        The absence of persistent storage of personal data structurally reduces the potential
-                        consequences of a compromise.</li>
+                    <li><strong>No persistent data exposure</strong><br>
+                        Academic content is processed within a limited operational window. No persistent databases of
+                        student work are maintained.</li>
 
-                    <li><strong>Exchange Security</strong><br>
-                        Data exchanges between users, systems, and technical components are protected by adapted
-                        encryption mechanisms, guaranteeing the confidentiality and integrity of flows throughout the
-                        processing duration.</li>
+                    <li><strong>Secure transmission and delivery</strong><br>
+                        Outputs are transmitted through secure channels aligned with institutional IT protocols.</li>
 
-                    <li><strong>Risk Surface Reduction</strong><br>
-                        The automatic deletion of data after processing, combined with the absence of history and
-                        persistent databases, strongly limits the interest and impact of an attack targeting data.</li>
+                    <li><strong>Infrastructure-level security controls</strong><br>
+                        Security is implemented at system architecture level (access control, isolation, monitoring).</li>
                 </ul>
 
                 <h3>Cybersecurity Skills and Culture</h3>
 
-                <p>The technical and organizational choices implemented by Grades Education rely on <strong>internal
-                        cybersecurity expertise</strong>, developed through demanding institutional environments.</p>
-
-                <p>Team members are regularly involved in <strong>spaces for reflection, training, and
-                        awareness</strong> regarding cybersecurity and the intersecting issues of artificial
-                    intelligence and information system protection.
-                    This dynamic notably includes:</p>
+                <p>Security is not only technical.</p>
+                <p>Grades Education integrates cybersecurity governance into its operations, including:</p>
 
                 <ul>
-                    <li>interventions and exchanges within academic and professional frameworks dedicated to
-                        cybersecurity and AI,</li>
-                    <li>engagement in <strong>continuous cybersecurity training</strong> paths, to maintain a high level
-                        of requirement and skill updating.</li>
+                    <li>dedicated security oversight (CISO-level),</li>
+                    <li>regular security audits,</li>
+                    <li>continuous monitoring of system activity.</li>
                 </ul>
+                <p>Security decisions are documented and aligned with institutional requirements.</p>
 
                 <h3>Alignment with U.S. Frameworks</h3>
+                <p>Our approach is consistent with established cybersecurity practices, including NIST-oriented
+                    frameworks, and can be mapped to institutional security requirements in higher education.</p>
+            </div>
 
-                <p>The implemented controls are aligned with U.S.-oriented cybersecurity practices, including
-                    NIST-style risk management principles, particularly regarding:</p>
-
-                <ul>
-                    <li>risk management,</li>
-                    <li>service continuity and availability,</li>
-                    <li>protection against cybersecurity incidents.</li>
-                </ul>
-
-                <p>Security is not treated as an additional layer, but as an <strong>intrinsic property of the
-                        systems</strong> operated by Grades Education.</p>
+            <div
+                style="max-width: 760px; margin: 0 auto 1rem; padding: 1.5rem 1.75rem; border: 1px solid var(--border); border-radius: var(--radius-card); background: rgba(255, 255, 255, 0.02); text-align: left;">
+                <p style="margin: 0 0 0.6rem; color: var(--text-heading); font-weight: 600;">Further reading</p>
+                <p style="margin: 0 0 0.8rem; color: var(--text-body); opacity: 0.9;">Why assessment infrastructure
+                    must be secure by design.</p>
+                <a href="Publications/Executive-brief_GR-EXEC-2026-04.pdf" target="_blank"
+                    style="color: var(--primary); font-weight: 600; text-decoration: none;">&rarr; Read the executive
+                    briefing</a>
             </div>
         </section>
     </main>
