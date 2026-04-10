@@ -167,7 +167,7 @@ a {
     display: block;
     height: 76px;
     width: auto;
-    transform: translateY(0);
+    transform: translateY(6px);
 }
 
 .highlight {
