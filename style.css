@@ -1,5 +1,5 @@
 /* CSS Variables & Reset */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
     /* Brand Colors extracted from socrate.grades-education.eu */
@@ -23,7 +23,8 @@
     /* Pill shape for buttons */
     --radius-card: 16px;
 
-    --font-main: 'Comfortaa', handwriting, system-ui, sans-serif;
+    --font-main: 'Inter', system-ui, Arial, sans-serif;
+    --font-heading: 'Garamond', 'Times New Roman', serif;
 
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -56,12 +57,30 @@ body {
 
 h1,
 h2,
-h3,
+h3 {
+    color: var(--text-heading);
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
 h4,
 h5,
 h6 {
     color: var(--text-heading);
     font-weight: 700;
+}
+
+.navbar,
+.nav-links a,
+.logo,
+.btn-primary,
+.btn-secondary,
+button,
+input,
+textarea,
+select,
+label {
+    font-family: var(--font-main);
 }
 
 a {
