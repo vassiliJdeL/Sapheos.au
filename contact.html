@@ -42,11 +42,8 @@
                 <p>If your university or college is considering Grades Education, we can support your review process
                     and implementation planning.</p>
             </div>
-            <form class="contact-form" action="https://formsubmit.co/laz@gradesedu.io"
+            <form class="contact-form" id="contact-form" action="/webhook/contact-us-main"
                 method="POST">
-                <input type="hidden" name="_subject" value="New contact inquiry from US website">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_from" value="Grades Education Contact Form">
                 <input type="text" name="_honey" tabindex="-1" autocomplete="off"
                     style="position:absolute;left:-5000px;opacity:0;pointer-events:none;">
                 <div class="form-group">
@@ -91,6 +88,45 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const btn = contactForm.querySelector('button[type="submit"]');
+                const originalText = btn ? btn.textContent : 'Submit Inquiry';
+                if (btn) {
+                    btn.textContent = 'Sending...';
+                    btn.disabled = true;
+                }
+
+                const formData = new FormData(contactForm);
+
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+
+                    alert('Your inquiry has been sent successfully.');
+                    contactForm.reset();
+                } catch (error) {
+                    alert('Submission error. Please try again in a few moments.');
+                    console.error('Contact form submission failed:', error);
+                } finally {
+                    if (btn) {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
