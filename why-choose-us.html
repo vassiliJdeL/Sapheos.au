@@ -41,7 +41,8 @@
     <section class="hero hero--top-focus">
         <div class="container hero-content hero-content--top-focus">
             <h1 class="hero-title">
-                <span class="hero-line">Other tools help you grade everyday assignments.</span>
+                <span class="hero-line hero-line-force">Other tools help you grade.</span>
+                <span class="hero-line hero-line-force">Everyday assignments. We don’t.</span>
             </h1>
             <p class="hero-subheadline hero-subheadline--minor">
                 <span class="hero-subline">Perusall, Graide, Ignite AI, Horizon AI</span>
@@ -101,6 +102,10 @@
             text-align: center;
         }
 
+        .hero--top-focus .hero-line-force {
+            display: block;
+        }
+
         .hero--top-focus .hero-subheadline {
             max-width: 800px;
             line-height: 1.35;
@@ -151,6 +156,10 @@
 
         @media (min-width: 901px) {
             .hero--top-focus .hero-subline {
+                white-space: nowrap;
+            }
+
+            .hero--top-focus .hero-line-force {
                 white-space: nowrap;
             }
         }
