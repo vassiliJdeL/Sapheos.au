@@ -44,21 +44,26 @@
                 <span class="hero-line">How much does evaluation cost you?</span>
             </h1>
             <p class="hero-subheadline hero-subheadline--minor">
-                <span class="hero-subline">Probably more than you see</span><br>
-                <span class="hero-subline">You're not counting everything</span>
-            </p>
-            <p class="hero-subheadline hero-subheadline--major">
-                <span class="hero-subline">Faculty review</span><br>
-                <span class="hero-subline">Admin coordination</span><br>
-                <span class="hero-subline">It gets redone</span>
+                <span class="hero-subline">Grades Education makes your high-stakes decisions defensible. We do not
+                    play in the same playground as others. We have developed an entirely new park.</span>
             </p>
             <p class="hero-pivot">
-                <span class="hero-subline hero-subline-emphasis">Are you sure that's it?</span>
+                <span class="hero-subline hero-subline-emphasis">We focus on 3 key pillars</span>
             </p>
-            <p class="hero-subheadline hero-subheadline--major">
-                <span class="hero-subline">Grades Education focuses on high-stakes academic evaluation:</span><br>
-                <span class="hero-subline">end-of-studies dissertations, capstone projects, and internship-based assessments.</span><br><br>
-            </p>
+            <div class="hub-grid home-pillars-grid">
+                <a href="cost-control.html" class="hub-card">
+                    <h3>Cost control</h3>
+                    <span class="card-arrow">&rarr; View details</span>
+                </a>
+                <a href="quality-assurance.html" class="hub-card">
+                    <h3>Quality Assurance</h3>
+                    <span class="card-arrow">&rarr; View details</span>
+                </a>
+                <a href="student-success.html" class="hub-card">
+                    <h3>student success</h3>
+                    <span class="card-arrow">&rarr; View details</span>
+                </a>
+            </div>
             <div class="hero-buttons hero-cta">
                 <a href="contact.html" class="btn-primary">Audit your evaluation process</a>
                 <a href="tools.html" class="btn-secondary">Stand up to scrutiny</a>
@@ -155,6 +160,54 @@
 
         .hero--top-focus .hero-cta .btn-secondary {
             opacity: 0.85;
+        }
+
+        .home-pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.1rem;
+            width: 100%;
+            max-width: 860px;
+            margin: 0 auto 2rem;
+            padding: 0;
+        }
+
+        .home-pillars-grid .hub-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-card);
+            padding: 1.6rem 1.4rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: left;
+        }
+
+        .home-pillars-grid .hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-pillars-grid .hub-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 1rem;
+            color: var(--text-heading);
+        }
+
+        .home-pillars-grid .hub-card .card-arrow {
+            color: var(--text-heading);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+
+        .home-pillars-grid .hub-card:hover .card-arrow {
+            gap: 0.8rem;
         }
 
         @media (max-width: 900px) {
