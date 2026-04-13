@@ -68,11 +68,14 @@
                     <span class="card-arrow">&rarr; View details</span>
                 </a>
             </div>
-            <p class="hero-subheadline hero-subheadline--major" style="margin-bottom: 1.4rem;">
-                <span class="hero-subline">Enterprise-Grade Architecture for Higher Education ✓ Seamless LMS
-                    Integration (LTI 1.3 standard) ✓ FERPA &amp; GDPR Compliant ✓ Secure Institutional Single Sign-On
-                    (SSO)</span>
-            </p>
+            <div class="hero-subheadline hero-subheadline--major" style="margin-bottom: 1.4rem;">
+                <span class="hero-subline">Enterprise-Grade Architecture for Higher Education</span>
+                <ul class="hero-feature-list">
+                    <li>✓ Seamless LMS Integration (LTI 1.3 standard)</li>
+                    <li>✓ FERPA-Compliant</li>
+                    <li>✓ Secure Institutional Single Sign-On (SSO)</li>
+                </ul>
+            </div>
             <div class="hero-buttons hero-cta">
                 <a href="contact.html" class="btn-primary">Request a demo</a>
                 <a href="tools.html" class="btn-secondary">Explore our platform</a>
@@ -232,6 +235,21 @@
 
         .home-pillars-grid .hub-card:hover .card-arrow {
             gap: 0.8rem;
+        }
+
+        .hero--top-focus .hero-feature-list {
+            list-style: none;
+            margin: 0.55rem auto 0;
+            padding: 0;
+            max-width: 800px;
+        }
+
+        .hero--top-focus .hero-feature-list li {
+            margin: 0.25rem 0;
+            font-size: clamp(16px, 1.75vw, 18px);
+            line-height: 1.55;
+            font-weight: 400;
+            color: var(--text-body);
         }
 
         @media (max-width: 900px) {
