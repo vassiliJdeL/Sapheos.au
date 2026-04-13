@@ -140,8 +140,13 @@
         }
 
         @media (min-width: 901px) {
-            .hero--top-focus .hero-subline {
+            .hero--top-focus .hero-subheadline:not(.hero-subheadline--minor) .hero-subline {
                 white-space: nowrap;
+            }
+
+            .hero--top-focus .hero-subheadline--minor .hero-subline {
+                display: block;
+                white-space: normal;
             }
         }
 
