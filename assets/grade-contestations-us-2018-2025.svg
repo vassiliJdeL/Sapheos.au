@@ -1,64 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1560" viewBox="0 0 1260 1560">
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1D232B"/><stop offset="55%" stop-color="#252C33"/><stop offset="100%" stop-color="#2C323A"/></linearGradient>
 <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C64273"/><stop offset="100%" stop-color="#FF4D8A"/></linearGradient>
-<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
-<rect x="0" y="0" width="1600" height="980" fill="url(#bg)"/>
-<text x="140" y="80" fill="#F2F3F5" font-family="EB Garamond, serif" font-size="62" font-weight="600">U.S. Grade Contestation Trend (2018–2025)</text>
-<text x="140" y="122" fill="#CFD8E1" font-family="EB Garamond, serif" font-size="34" font-style="italic">Published committee/senate figures from 10 universities (consolidated dataset)</text>
-<rect x="140" y="170" width="1350" height="640" fill="rgba(255,255,255,0.01)" stroke="rgba(232,236,240,0.18)" stroke-width="2"/>
-<line x1="140" y1="810.00" x2="1490" y2="810.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
-<text x="124" y="816.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="20">0</text>
-<line x1="140" y1="650.00" x2="1490" y2="650.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
-<text x="124" y="656.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="20">100</text>
-<line x1="140" y1="490.00" x2="1490" y2="490.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
-<text x="124" y="496.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="20">200</text>
-<line x1="140" y1="330.00" x2="1490" y2="330.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
-<text x="124" y="336.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="20">300</text>
-<line x1="140" y1="170.00" x2="1490" y2="170.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
-<text x="124" y="176.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="20">400</text>
-<line x1="140.00" y1="170" x2="140.00" y2="810" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
-<text x="140.00" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2018</text>
-<line x1="332.86" y1="170" x2="332.86" y2="810" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
-<text x="332.86" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2019</text>
-<line x1="525.71" y1="170" x2="525.71" y2="810" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
-<text x="525.71" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2020</text>
-<line x1="718.57" y1="170" x2="718.57" y2="810" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
-<text x="718.57" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2021</text>
-<line x1="911.43" y1="170" x2="911.43" y2="810" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
-<text x="911.43" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2022</text>
-<line x1="1104.29" y1="170" x2="1104.29" y2="810" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
-<text x="1104.29" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2023</text>
-<line x1="1297.14" y1="170" x2="1297.14" y2="810" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
-<text x="1297.14" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2024</text>
-<line x1="1490.00" y1="170" x2="1490.00" y2="810" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
-<text x="1490.00" y="846" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="18">2025</text>
-<line x1="1088.21" y1="170" x2="1088.21" y2="810" stroke="#EAB0C4" stroke-width="2.2" stroke-dasharray="10 10"/>
-<text x="1100.21" y="198" fill="#F2D5DF" font-family="Source Sans 3, sans-serif" font-size="22" font-weight="600">Nov 30, 2022</text>
-<text x="1100.21" y="226" fill="#D9C1CB" font-family="Source Sans 3, sans-serif" font-size="18">Public release of ChatGPT</text>
-<line x1="140" y1="793.04" x2="1088.2142857143003" y2="793.04" stroke="rgba(232,236,240,0.45)" stroke-width="1.6" stroke-dasharray="6 8"/>
-<line x1="1088.2142857143003" y1="455.33" x2="1490" y2="455.33" stroke="rgba(232,236,240,0.45)" stroke-width="1.6" stroke-dasharray="6 8"/>
-<text x="150" y="783.04" fill="#D8E0E8" font-family="Source Sans 3, sans-serif" font-size="17">Mean before pivot: 10.6</text>
-<text x="1098.21" y="445.33" fill="#D8E0E8" font-family="Source Sans 3, sans-serif" font-size="17">Mean after pivot: 221.7</text>
-<path d="M 140.00 795.60 L 332.86 794.00 L 525.71 792.40 L 718.57 790.80 L 911.43 792.40 L 1104.29 790.80 L 1297.14 371.60 L 1490.00 203.60" fill="none" stroke="url(#lineGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-<circle cx="140.00" cy="795.60" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="140.00" y="779.60" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">9</text>
-<circle cx="332.86" cy="794.00" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="332.86" y="778.00" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">10</text>
-<circle cx="525.71" cy="792.40" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="525.71" y="776.40" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">11</text>
-<circle cx="718.57" cy="790.80" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="718.57" y="774.80" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">12</text>
-<circle cx="911.43" cy="792.40" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="911.43" y="776.40" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">11</text>
-<circle cx="1104.29" cy="790.80" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="1104.29" y="774.80" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">12</text>
-<circle cx="1297.14" cy="371.60" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="1297.14" y="355.60" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">274</text>
-<circle cx="1490.00" cy="203.60" r="7.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
-<text x="1490.00" y="187.60" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="15">379</text>
-<text x="815.00" y="920" text-anchor="middle" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="22">Reporting year (derived from period end date)</text>
-<text x="54" y="490.00" text-anchor="middle" transform="rotate(-90 54 490.00)" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="22">Reported contestation cases (count)</text>
-<text x="140" y="954" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="22" font-style="italic">Source: Public senate/committee annual reports (CCSU, CSULB, EIU, NDSU, PDX, Purdue, UCF, UND, USC, UTC). Compiled 2026-04-27.</text>
+<rect x="0" y="0" width="1260" height="1560" fill="url(#bg)"/>
+<text x="120" y="90" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="28">U.S. Grade Contestation Trend (2018–2025)</text>
+<text x="120" y="132" fill="#CFD8E1" font-family="Source Sans 3, sans-serif" font-size="28" font-style="italic">Published committee/senate figures from 10 universities (consolidated dataset)</text>
+<rect x="120" y="160" width="1060" height="980" fill="rgba(255,255,255,0.01)" stroke="rgba(232,236,240,0.18)" stroke-width="2"/>
+<line x1="120" y1="1140.00" x2="1180" y2="1140.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="106" y="1149.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="28">0</text>
+<line x1="120" y1="895.00" x2="1180" y2="895.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="106" y="904.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="28">100</text>
+<line x1="120" y1="650.00" x2="1180" y2="650.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="106" y="659.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="28">200</text>
+<line x1="120" y1="405.00" x2="1180" y2="405.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="106" y="414.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="28">300</text>
+<line x1="120" y1="160.00" x2="1180" y2="160.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="106" y="169.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="28">400</text>
+<line x1="120.00" y1="160" x2="120.00" y2="1140" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
+<text x="120.00" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2018</text>
+<line x1="271.43" y1="160" x2="271.43" y2="1140" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
+<text x="271.43" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2019</text>
+<line x1="422.86" y1="160" x2="422.86" y2="1140" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
+<text x="422.86" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2020</text>
+<line x1="574.29" y1="160" x2="574.29" y2="1140" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
+<text x="574.29" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2021</text>
+<line x1="725.71" y1="160" x2="725.71" y2="1140" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
+<text x="725.71" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2022</text>
+<line x1="877.14" y1="160" x2="877.14" y2="1140" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
+<text x="877.14" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2023</text>
+<line x1="1028.57" y1="160" x2="1028.57" y2="1140" stroke="rgba(232,236,240,0.18)" stroke-width="1"/>
+<text x="1028.57" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2024</text>
+<line x1="1180.00" y1="160" x2="1180.00" y2="1140" stroke="rgba(232,236,240,0.10)" stroke-width="1"/>
+<text x="1180.00" y="1192" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="28">2025</text>
+<line x1="864.52" y1="160" x2="864.52" y2="1140" stroke="#EAB0C4" stroke-width="2" stroke-dasharray="10 10"/>
+<text x="874.52" y="194" fill="#F2D5DF" font-family="Source Sans 3, sans-serif" font-size="28">Nov 30, 2022</text>
+<path d="M 120.00 1117.95 L 271.43 1115.50 L 422.86 1113.05 L 574.29 1110.60 L 725.71 1113.05 L 877.14 1110.60 L 1028.57 468.70 L 1180.00 211.45" fill="none" stroke="url(#lineGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+<circle cx="120.00" cy="1117.95" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="120.00" y="1097.95" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">9</text>
+<circle cx="271.43" cy="1115.50" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="271.43" y="1095.50" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">10</text>
+<circle cx="422.86" cy="1113.05" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="422.86" y="1093.05" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">11</text>
+<circle cx="574.29" cy="1110.60" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="574.29" y="1090.60" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">12</text>
+<circle cx="725.71" cy="1113.05" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="725.71" y="1093.05" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">11</text>
+<circle cx="877.14" cy="1110.60" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="877.14" y="1090.60" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">12</text>
+<circle cx="1028.57" cy="468.70" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="1028.57" y="448.70" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">274</text>
+<circle cx="1180.00" cy="211.45" r="8.5" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="1180.00" y="191.45" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="28">379</text>
+<text x="650.00" y="1260" text-anchor="middle" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="28">Reporting year</text>
+<text x="48" y="650.00" text-anchor="middle" transform="rotate(-90 48 650.00)" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="28">Reported contestation cases (count)</text>
+<text x="120" y="1370" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">Source: Public senate/committee annual reports</text>
+<text x="120" y="1414" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">(CCSU, CSULB, EIU, NDSU, PDX, Purdue, UCF, UND, USC, UTC).</text>
+<text x="120" y="1458" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">Methodology: Aggregated annual counts from publicly available committee/senate records. Compiled 2026-04-27.</text>
 </svg>
