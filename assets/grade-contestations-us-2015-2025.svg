@@ -5,7 +5,7 @@
 <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
 <rect x="0" y="0" width="1260" height="1460" fill="url(#bg)"/>
-<text x="120" y="90" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="36" font-weight="700">U.S. Grade Contestation Trend (2018–2025)</text>
+<text x="120" y="90" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="36" font-weight="700">U.S. Grade Dispute Trend (2018–2025)</text>
 <text x="120" y="145" fill="#CFD8E1" font-family="Source Sans 3, sans-serif" font-size="27.5" font-weight="400">Published committee/senate figures from 10 universities (consolidated dataset)</text>
 <rect x="120" y="186" width="1060" height="960" fill="rgba(255,255,255,0.01)" stroke="rgba(232,236,240,0.18)" stroke-width="2"/>
 <line x1="120" y1="1146.00" x2="1180" y2="1146.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
@@ -58,5 +58,5 @@
 <text x="120" y="1348" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">(CCSU, CSULB, EIU, NDSU, PDX, Purdue, UCF, UND, USC, UTC).</text>
 <text x="120" y="1386" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">Methodology: Aggregated annual counts from publicly available</text>
 <text x="120" y="1424" fill="#BFCAD5" font-family="Source Sans 3, sans-serif" font-size="28" font-weight="500">committee/senate records. Compiled 2026-04-27.</text>
-<text x="48" y="666.00" text-anchor="middle" transform="rotate(-90 48 666.00)" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="28">Reported contestation cases (count)</text>
+<text x="48" y="666.00" text-anchor="middle" transform="rotate(-90 48 666.00)" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="28">Reported dispute cases (count)</text>
 </svg>
