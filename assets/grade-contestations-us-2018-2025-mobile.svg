@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1700" viewBox="0 0 900 1700">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1D232B"/><stop offset="55%" stop-color="#252C33"/><stop offset="100%" stop-color="#2C323A"/></linearGradient>
+<linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C64273"/><stop offset="100%" stop-color="#FF4D8A"/></linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="0" y="0" width="900" height="1700" fill="url(#bg)"/>
+<text x="100" y="88" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="52" font-weight="600">U.S. Grade Contestation Trend</text>
+<text x="100" y="142" fill="#CFD8E1" font-family="Source Sans 3, sans-serif" font-size="42">2018–2025</text>
+<rect x="100" y="190" width="745" height="1260" fill="rgba(255,255,255,0.01)" stroke="rgba(232,236,240,0.18)" stroke-width="2"/>
+<line x1="100" y1="1450.00" x2="845" y2="1450.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="90" y="1462.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="42">0</text>
+<line x1="100" y1="1135.00" x2="845" y2="1135.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="90" y="1147.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="42">100</text>
+<line x1="100" y1="820.00" x2="845" y2="820.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="90" y="832.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="42">200</text>
+<line x1="100" y1="505.00" x2="845" y2="505.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="90" y="517.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="42">300</text>
+<line x1="100" y1="190.00" x2="845" y2="190.00" stroke="rgba(232,236,240,0.16)" stroke-width="1"/>
+<text x="90" y="202.00" text-anchor="end" fill="#C7D1DB" font-family="Source Sans 3, sans-serif" font-size="42">400</text>
+<line x1="100.00" y1="190" x2="100.00" y2="1450" stroke="rgba(232,236,240,0.12)" stroke-width="1"/>
+<text x="100.00" y="1515" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="42">2018</text>
+<line x1="312.86" y1="190" x2="312.86" y2="1450" stroke="rgba(232,236,240,0.12)" stroke-width="1"/>
+<text x="312.86" y="1515" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="42">2020</text>
+<line x1="525.71" y1="190" x2="525.71" y2="1450" stroke="rgba(232,236,240,0.12)" stroke-width="1"/>
+<text x="525.71" y="1515" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="42">2022</text>
+<line x1="632.14" y1="190" x2="632.14" y2="1450" stroke="rgba(232,236,240,0.12)" stroke-width="1"/>
+<text x="632.14" y="1515" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="42">2023</text>
+<line x1="845.00" y1="190" x2="845.00" y2="1450" stroke="rgba(232,236,240,0.12)" stroke-width="1"/>
+<text x="845.00" y="1515" text-anchor="middle" fill="#D4DEE8" font-family="Source Sans 3, sans-serif" font-size="42">2025</text>
+<line x1="623.27" y1="190" x2="623.27" y2="1450" stroke="#EAB0C4" stroke-width="2" stroke-dasharray="10 10"/>
+<text x="631.27" y="234" fill="#F2D5DF" font-family="Source Sans 3, sans-serif" font-size="42">Nov 30, 2022</text>
+<path d="M 100.00 1421.65 L 206.43 1418.50 L 312.86 1415.35 L 419.29 1412.20 L 525.71 1415.35 L 632.14 1412.20 L 738.57 586.90 L 845.00 256.15" fill="none" stroke="url(#lineGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+<circle cx="100.00" cy="1421.65" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="100.00" y="1399.65" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">9</text>
+<circle cx="206.43" cy="1418.50" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="206.43" y="1396.50" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">10</text>
+<circle cx="312.86" cy="1415.35" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="312.86" y="1393.35" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">11</text>
+<circle cx="419.29" cy="1412.20" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="419.29" y="1390.20" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">12</text>
+<circle cx="525.71" cy="1415.35" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="525.71" y="1393.35" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">11</text>
+<circle cx="632.14" cy="1412.20" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="632.14" y="1390.20" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">12</text>
+<circle cx="738.57" cy="586.90" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="738.57" y="564.90" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">274</text>
+<circle cx="845.00" cy="256.15" r="9" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2"/>
+<text x="845.00" y="234.15" text-anchor="middle" fill="#F5DCE6" font-family="Source Sans 3, sans-serif" font-size="42">379</text>
+<text x="472.50" y="1624" text-anchor="middle" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="42">Reporting year</text>
+<text x="44" y="820.00" text-anchor="middle" transform="rotate(-90 44 820.00)" fill="#E6EDF3" font-family="Source Sans 3, sans-serif" font-size="42">Reported cases</text>
+</svg>
