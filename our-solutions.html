@@ -10,6 +10,38 @@
     <link rel="stylesheet" href="style.css?v=20260410-fix2">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        .compliance-content {
+            max-width: 800px;
+            margin: 4rem auto;
+            text-align: left;
+        }
+
+        .solutions-title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            background: var(--gradient-text);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.08;
+            max-width: 800px;
+        }
+
+        .solutions-intro {
+            font-size: 1.1rem;
+            color: var(--text-body);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .solutions-copy,
+        .solutions-tail {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
         .tool-name-link {
             color: #2f6a72;
             font-weight: 600;
@@ -22,21 +54,68 @@
             color: #3b7f88;
         }
 
-        .infra-card {
+        .home-pillars-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.1rem;
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto 2rem;
+            padding: 0;
+        }
+
+        .home-pillars-grid .hub-card {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--radius-card);
-            padding: 1.6rem 1.5rem;
-            margin-bottom: 1.8rem;
+            padding: 2rem 1.8rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: left;
         }
 
-        .infra-card h3 {
-            font-size: 1.35rem;
+        .home-pillars-grid .hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-pillars-grid .hub-card h3 {
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--text-heading);
         }
 
-        .infra-card p:last-child {
+        .home-pillars-grid .hub-card p {
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 1.1rem;
+            flex-grow: 1;
+            opacity: 0.9;
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+
+        .home-pillars-grid .hub-card p:last-child {
             margin-bottom: 0;
+        }
+
+        .graph-bleed {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(1120px, calc(100vw - 2rem));
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 2.4rem;
+        }
+
+        .decision-curve-trigger {
+            display: block;
+            cursor: zoom-in;
         }
 
         .decision-curve-image {
@@ -48,20 +127,6 @@
             transform: scale(1.03);
             transform-origin: center center;
             clip-path: inset(10px 10px 10px 10px);
-        }
-
-        .infra-card-visual {
-            background: transparent;
-            border: none;
-            border-radius: 0;
-            padding: 0;
-            box-shadow: none;
-            overflow: hidden;
-        }
-
-        .decision-curve-trigger {
-            display: block;
-            cursor: zoom-in;
         }
 
         .decision-curve-view-link {
@@ -81,6 +146,11 @@
 
         .decision-curve-view-link:hover {
             color: var(--text-main);
+        }
+
+        .solutions-cta {
+            text-align: left;
+            margin-top: 0.8rem;
         }
 
         .lightbox-overlay {
@@ -131,6 +201,14 @@
         }
 
         @media (max-width: 768px) {
+            .graph-bleed {
+                left: 0;
+                transform: none;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
             .lightbox-overlay {
                 padding: 0.35rem;
             }
@@ -165,65 +243,52 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container" style="padding-top: 4rem;">
-        <div class="section-header" style="text-align: left; max-width: 800px; margin: 0 auto 3rem;">
-            <h2>Your faculty judge. Your institution decides.</h2>
-            <p style="max-width: 800px; margin: 0;">The gap between the two is where assessment becomes fragile
-                — across supervisors, across cohorts, across time.<br>Grades Education is the infrastructure that
-                closes that gap.</p>
-        </div>
+    <main class="container">
+        <section class="compliance-content">
+            <div class="solutions-copy">
+                <h1 class="solutions-title" style="text-align: center;">Your faculty judge.<br>Your institution decides.</h1>
+                <p class="solutions-intro" style="text-align: center;">The gap between the two is where assessment becomes fragile — across supervisors, across cohorts, across time.</p>
+                <p class="solutions-intro" style="text-align: center; margin-bottom: 2rem;">Grades Education is the infrastructure that closes that gap.</p>
+            </div>
 
-        <div style="max-width: 800px; margin: 0 auto 4rem; text-align: left;">
-            <div class="infra-card infra-card-visual">
+            <div class="graph-bleed">
                 <a href="assets/academic-decision-curve-moments.svg" class="decision-curve-trigger" id="decisionCurveTrigger">
                     <img src="assets/academic-decision-curve-moments.svg" alt="The High-Stakes Academic Decision Curve" class="decision-curve-image">
                 </a>
                 <button type="button" class="decision-curve-view-link" id="decisionCurveViewLink">View full size</button>
             </div>
 
-            <div class="infra-card">
-                <h3 style="margin-bottom: 1rem;">Before the work exists — Supervision</h3>
-                <p style="margin-bottom: 1.2rem;">Institutional standards should shape student thinking from the beginning,
-                    not be applied as a filter at the end.</p>
-                <p style="margin-bottom: 0;"><a href="socrates.html" class="tool-name-link">Socrates</a> structures the intellectual framing
-                    of every dissertation and capstone against your program's own expectations. It does not assist students
-                    — it interrogates them. It identifies three cognitive profiles and orients its questioning accordingly.
-                    Every student works through the same institutional framework before writing a single page — regardless
-                    of who their supervisor is.</p>
+            <div class="hub-grid home-pillars-grid">
+                <div class="hub-card">
+                    <h3>Before the work exists — Supervision</h3>
+                    <p>Institutional standards should shape student thinking from the beginning, not be applied as a filter at the end.</p>
+                    <p><a href="socrates.html" class="tool-name-link">Socrates</a> structures the intellectual framing of every dissertation and capstone against your program's own expectations. It does not assist students — it interrogates them. It identifies three cognitive profiles and orients its questioning accordingly. Every student works through the same institutional framework before writing a single page — regardless of who their supervisor is.</p>
+                </div>
+
+                <div class="hub-card">
+                    <h3>When the work arrives — Integrity</h3>
+                    <p>Before faculty invest judgment in a submission, the institution needs to know that submission is a reliable object of evaluation.</p>
+                    <p><a href="diotima.html" class="tool-name-link">Diotima</a> examines the actual relationship between the student and the work — where genuine human reasoning is present, and where it is not. No tool currently on the market does this reliably.<br><a href="parmenides.html" class="tool-name-link">Parmenides</a> verifies that cited sources exist and hold. Hallucinated references and citation inconsistencies are flagged before evaluation begins — not discovered mid-jury.</p>
+                </div>
+
+                <div class="hub-card">
+                    <h3>When the grade is assigned — Formalization</h3>
+                    <p><a href="euclid.html" class="tool-name-link">Euclid</a> and <a href="aristotle.html" class="tool-name-link">Aristotle</a> structure the faculty member's judgment into a documented institutional record. Criteria applied, evidence cited, reasoning preserved — in a form the institution owns, can retrieve, and can rely upon long after the jury has dissolved.</p>
+                    <p>This is not automated grading. It is the difference between a decision that lives in a faculty member's memory and one that belongs to the institution.</p>
+                </div>
             </div>
 
-            <div class="infra-card">
-                <h3 style="margin-bottom: 1rem;">When the work arrives — Integrity</h3>
-                <p style="margin-bottom: 1.2rem;">Before faculty invest judgment in a submission, the institution needs to
-                    know that submission is a reliable object of evaluation.</p>
-                <p style="margin-bottom: 0;"><a href="diotima.html" class="tool-name-link">Diotima</a> examines the actual relationship
-                    between the student and the work — where genuine human reasoning is present, and where it is not. No
-                    tool currently on the market does this reliably.<br><a href="parmenides.html" class="tool-name-link">Parmenides</a> verifies
-                    that cited sources exist and hold. Hallucinated references and citation inconsistencies are flagged
-                    before evaluation begins — not discovered mid-jury.</p>
+            <div class="solutions-tail">
+                <p class="solutions-intro" style="margin-bottom: 2.4rem;">This is the unglamorous part of assessment. The part no one competes to build. The part your institution cannot do without.</p>
+
+                <h3 style="margin-top: 0; text-align: left;">Start the conversation</h3>
+                <p class="solutions-intro" style="margin-bottom: 1.6rem;">We work with institutions to configure this infrastructure around their own standards — their programs, their criteria, their assessment sequences.</p>
+
+                <div class="solutions-cta">
+                    <a href="contact.html" class="btn-primary">Contact us</a>
+                </div>
             </div>
-
-            <div class="infra-card">
-                <h3 style="margin-bottom: 1rem;">When the grade is assigned — Formalization</h3>
-                <p style="margin-bottom: 1.2rem;"><a href="euclid.html" class="tool-name-link">Euclid</a> and <a href="aristotle.html" class="tool-name-link">Aristotle</a>
-                    structure the faculty member's judgment into a documented institutional record. Criteria applied,
-                    evidence cited, reasoning preserved — in a form the institution owns, can retrieve, and can rely upon
-                    long after the jury has dissolved.</p>
-                <p style="margin-bottom: 0;">This is not automated grading. It is the difference between a decision
-                    that lives in a faculty member's memory and one that belongs to the institution.</p>
-            </div>
-
-            <p style="margin-bottom: 2.4rem;">This is the unglamorous part of assessment. The part no one competes to
-                build. The part your institution cannot do without.</p>
-
-            <h3 style="margin-bottom: 1rem;">Start the conversation</h3>
-            <p style="margin-bottom: 1.2rem;">We work with institutions to configure this
-                infrastructure around their own standards — their programs, their criteria, their assessment
-                sequences.</p>
-
-            <a href="contact.html" class="btn-primary">Contact us</a>
-        </div>
+        </section>
     </main>
 
     <div class="lightbox-overlay" id="decisionCurveLightbox" aria-hidden="true">
