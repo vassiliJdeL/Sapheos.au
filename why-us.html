@@ -47,19 +47,27 @@
             <p class="hero-subheadline hero-subheadline--major">
                 <span class="hero-subline hero-subline-wrap">Not for everyday assignments. For the evaluations that define degrees — and that define your institution's credibility.</span><br><br>
             </p>
-            <p class="hero-pivot" style="margin-top: 0; margin-bottom: 20px;">
-                <span class="hero-subline hero-subline-emphasis">Grades Education is designed for the evaluations that define degrees:</span>
-            </p>
-            <p class="hero-subheadline hero-subheadline--major">
-                <span class="hero-scope-list">
-                    <span class="hero-subline">- end-of-studies dissertations</span>
-                    <span class="hero-subline">- capstone projects</span>
-                    <span class="hero-subline">- internship and competency-based reports</span>
-                </span><br><br>
-            </p>
-            <p class="hero-pivot" style="margin-top: 0; margin-bottom: 20px;">
-                <span class="hero-subline hero-subline-emphasis hero-subline-wrap">These are the decisions that get contested, that accreditors scrutinize, and that your institution must be able to defend. A score is not enough. A record is.</span>
-            </p>
+            <div class="whyus-detail">
+                <h3 class="whyus-section-title">Who we are</h3>
+                <p>We are academics who built the tools we wished we had. When AI changed what students submit, institutions were left with no reliable way to detect it, document it, or defend the decisions made around it. Grades Education makes academic decisions traceable, defensible, and auditable!</p>
+
+                <h3 class="whyus-section-title">Why Choose us</h3>
+                <p><strong>We come from academia</strong><br>
+                    We have institutional knowledge of how academic decisions, degree-granting processess, and accreditations function.</p>
+
+                <p><strong>Unique AI solutions</strong><br>
+                    We developed the platform that powers high-stakes academic decisions.</p>
+
+                <p><strong>The only company in the world</strong> providing all of the following:</p>
+                <p class="whyus-checklist">
+                    <span class="checkmark">✔️</span> AI use reports<br>
+                    <span class="checkmark">✔️</span> Reference verification<br>
+                    <span class="checkmark">✔️</span> Research question articulation<br>
+                    <span class="checkmark">✔️</span> Research design assessment<br>
+                    <span class="checkmark">✔️</span> Capstone competence validation<br>
+                    <span class="checkmark">✔️</span> Supervisor virtualization.
+                </p>
+            </div>
             <div class="hero-buttons hero-cta">
                 <a href="contact.html" class="btn-primary">Audit your evaluation process</a>
                 <a href="our-solutions.html" class="btn-secondary">Stand up to scrutiny</a>
@@ -150,6 +158,34 @@
 
         .hero--top-focus .hero-subline-wrap {
             white-space: normal;
+        }
+
+        .whyus-detail {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: left;
+            color: var(--text-body);
+            font-size: clamp(16px, 1.75vw, 18px);
+            line-height: 1.65;
+            opacity: 0.9;
+        }
+
+        .whyus-section-title {
+            font-size: 1.5rem;
+            margin: 2rem 0 0.8rem;
+            color: var(--text-heading);
+        }
+
+        .whyus-detail p {
+            margin: 0 0 1rem;
+        }
+
+        .whyus-checklist {
+            margin-bottom: 1.4rem;
+        }
+
+        .checkmark {
+            color: #ffffff;
         }
 
         @media (min-width: 901px) {
