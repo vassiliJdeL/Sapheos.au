@@ -41,11 +41,11 @@
     <section class="hero hero--top-focus">
         <div class="container hero-content hero-content--top-focus">
             <h1 class="hero-title">
-                <span class="hero-line hero-line-force">Other tools help you grade.</span>
-                <span class="hero-line hero-line-force">Everyday assignments. We don’t.</span>
+                <span class="hero-line hero-line-force">Other tools give you a score.</span>
+                <span class="hero-line hero-line-force">We give you a record.</span>
             </h1>
             <p class="hero-subheadline hero-subheadline--major">
-                <span class="hero-subline">We do not focus on everyday assignments.</span><br><br>
+                <span class="hero-subline hero-subline-wrap">Not for everyday assignments. For the evaluations that define degrees — and that define your institution's credibility.</span><br><br>
             </p>
             <p class="hero-pivot" style="margin-top: 0; margin-bottom: 20px;">
                 <span class="hero-subline hero-subline-emphasis">Grades Education is designed for the evaluations that define degrees:</span>
@@ -58,10 +58,7 @@
                 </span><br><br>
             </p>
             <p class="hero-pivot" style="margin-top: 0; margin-bottom: 20px;">
-                <span class="hero-subline hero-subline-emphasis">We make decisions consistent, explainable, defensible</span>
-            </p>
-            <p class="hero-subheadline hero-subheadline--major">
-                <span class="hero-subline">Evaluations fail when decisions don't hold together</span><br><br>
+                <span class="hero-subline hero-subline-emphasis hero-subline-wrap">These are the decisions that get contested, that accreditors scrutinize, and that your institution must be able to defend. A score is not enough. A record is.</span>
             </p>
             <div class="hero-buttons hero-cta">
                 <a href="contact.html" class="btn-primary">Audit your evaluation process</a>
@@ -151,8 +148,12 @@
             color: var(--text-heading);
         }
 
+        .hero--top-focus .hero-subline-wrap {
+            white-space: normal;
+        }
+
         @media (min-width: 901px) {
-            .hero--top-focus .hero-subline {
+            .hero--top-focus .hero-subline:not(.hero-subline-wrap) {
                 white-space: nowrap;
             }
 
