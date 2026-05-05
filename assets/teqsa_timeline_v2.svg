@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1D232B"/>
+    <stop offset="55%" stop-color="#252C33"/>
+    <stop offset="100%" stop-color="#2C323A"/>
+  </linearGradient>
+  <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#C64273"/>
+    <stop offset="100%" stop-color="#FF4D8A"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="dotglow">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect width="1400" height="900" fill="url(#bg)"/>
+
+<text x="700" y="68" text-anchor="middle" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="36" font-weight="700">TEQSA's escalating expectations on AI and assessment</text>
+<text x="700" y="108" text-anchor="middle" fill="#9AABB8" font-family="Source Sans 3, sans-serif" font-size="24" font-weight="400">A three-year regulatory trajectory — with one clear direction of travel</text>
+
+<line x1="120" y1="440" x2="1260" y2="440" stroke="url(#lineGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+<polygon points="1270,440 1248,428 1248,452" fill="#FF4D8A" filter="url(#glow)"/>
+<text x="1288" y="446" fill="#FF6EA0" font-family="Source Sans 3, sans-serif" font-size="26" font-weight="700" dominant-baseline="middle">Now?</text>
+
+<line x1="180" y1="310" x2="180" y2="440" stroke="rgba(232,236,240,0.25)" stroke-width="1.5" stroke-dasharray="7 5"/>
+<circle cx="180" cy="440" r="13" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2.5" filter="url(#dotglow)"/>
+<text x="180" y="500" text-anchor="middle" fill="#EAB0C4" font-family="Source Sans 3, sans-serif" font-size="23" font-weight="600">Nov 2022</text>
+<rect x="50" y="148" width="260" height="154" rx="12" fill="rgba(242,245,248,0.05)" stroke="rgba(232,236,240,0.18)" stroke-width="1.5"/>
+<text x="180" y="185" text-anchor="middle" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="22" font-weight="700">ChatGPT launches</text>
+<text x="180" y="215" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">Academic integrity</text>
+<text x="180" y="239" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">concerns begin rising</text>
+<text x="180" y="263" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">across all disciplines</text>
+<text x="180" y="289" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">and all institutions</text>
+
+<line x1="520" y1="440" x2="520" y2="570" stroke="rgba(232,236,240,0.25)" stroke-width="1.5" stroke-dasharray="7 5"/>
+<circle cx="520" cy="440" r="13" fill="#FF6EA0" stroke="#FDE6EF" stroke-width="2.5" filter="url(#dotglow)"/>
+<text x="520" y="388" text-anchor="middle" fill="#EAB0C4" font-family="Source Sans 3, sans-serif" font-size="23" font-weight="600">Nov 2023</text>
+<rect x="390" y="576" width="260" height="154" rx="12" fill="rgba(242,245,248,0.05)" stroke="rgba(232,236,240,0.18)" stroke-width="1.5"/>
+<text x="520" y="612" text-anchor="middle" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="22" font-weight="700">First TEQSA guidance</text>
+<text x="520" y="642" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">Assessment reform for</text>
+<text x="520" y="666" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">the age of AI published.</text>
+<text x="520" y="690" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">Principles established.</text>
+<text x="520" y="714" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">No enforcement yet.</text>
+
+<line x1="860" y1="310" x2="860" y2="440" stroke="rgba(232,236,240,0.25)" stroke-width="1.5" stroke-dasharray="7 5"/>
+<circle cx="860" cy="440" r="17" fill="#FF4D8A" stroke="#FDE6EF" stroke-width="3" filter="url(#dotglow)"/>
+<text x="860" y="500" text-anchor="middle" fill="#EAB0C4" font-family="Source Sans 3, sans-serif" font-size="23" font-weight="600">Jul 2024</text>
+<rect x="726" y="148" width="268" height="154" rx="12" fill="rgba(198,66,115,0.12)" stroke="rgba(198,66,115,0.5)" stroke-width="2"/>
+<text x="860" y="185" text-anchor="middle" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="22" font-weight="700">Action plans required</text>
+<text x="860" y="215" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">TEQSA demands a plan</text>
+<text x="860" y="239" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">from every provider.</text>
+<text x="860" y="269" text-anchor="middle" fill="#F5C8D8" font-family="Source Sans 3, sans-serif" font-size="21" font-weight="700">100% compliance rate.</text>
+<text x="860" y="295" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">Plans ≠ infrastructure.</text>
+
+<line x1="1220" y1="440" x2="1220" y2="570" stroke="rgba(232,236,240,0.25)" stroke-width="1.5" stroke-dasharray="7 5"/>
+<circle cx="1220" cy="440" r="22" fill="#C64273" stroke="#FDE6EF" stroke-width="3.5" filter="url(#dotglow)"/>
+<text x="1220" y="386" text-anchor="middle" fill="#EAB0C4" font-family="Source Sans 3, sans-serif" font-size="23" font-weight="600">Sep 2025</text>
+<rect x="1083" y="576" width="280" height="180" rx="12" fill="rgba(198,66,115,0.20)" stroke="#C64273" stroke-width="2.5"/>
+<text x="1223" y="612" text-anchor="middle" fill="#F2F3F5" font-family="Source Sans 3, sans-serif" font-size="22" font-weight="700">Detection is over</text>
+<text x="1223" y="644" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">"Detecting AI use with</text>
+<text x="1223" y="668" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">certainty is all but</text>
+<text x="1223" y="692" text-anchor="middle" fill="#B8C8D8" font-family="Source Sans 3, sans-serif" font-size="19">impossible." — TEQSA</text>
+<text x="1223" y="724" text-anchor="middle" fill="#F5C8D8" font-family="Source Sans 3, sans-serif" font-size="21" font-weight="700">Structural reform only.</text>
+<text x="1223" y="748" text-anchor="middle" fill="#F5C8D8" font-family="Source Sans 3, sans-serif" font-size="21" font-weight="700">Evidence required.</text>
+
+<text x="700" y="860" text-anchor="middle" fill="#5A7080" font-family="Source Sans 3, sans-serif" font-size="20">Sources: TEQSA — Enacting assessment reform in a time of AI (Sep 2025) · Assessment reform for the age of AI (Nov 2023) · Gen AI action plan request (Jul 2024)</text>
+</svg>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-AU">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapheos — Students adapted to AI. Have you?</title>
     <meta name="description"
-        content="Supporting U.S. colleges and universities with defensible assessment, academic integrity controls, and policy-aligned decision support.">
+        content="Supporting Australian universities with defensible assessment, academic integrity controls, and policy-aligned decision support.">
     <link rel="stylesheet" href="style.css?v=20260410-fix2">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font is imported in CSS but adding preconnect for performance -->
@@ -52,19 +52,20 @@
                 <span class="hero-subline hero-subline-emphasis">Sapheos is the infrastructure that closes that gap.</span>
             </p>
             <div class="home-evidence-graph">
-                <img src="assets/grade-contestations-us-2018-2025.svg?v=20260501-1" alt="U.S. grade dispute trend from 2018 to 2025">
+                <img src="assets/teqsa_timeline_v2.svg?v=20260505-1" alt="TEQSA timeline showing escalating expectations on AI and assessment from 2022 to 2025">
             </div>
             <div class="home-evidence-story">
                 <ul>
-                    <li>ChatGPT has changed the way students learn and produce work.</li>
-                    <li>Since its launch, reported grade disputes have increased 31 times</li>
+                    <li>Since the launch of ChatGPT, TEQSA has recorded a sharp increase in academic integrity
+                        concerns — and acknowledged that AI detection is no longer a viable institutional response.</li>
                     <li>If you don’t adapt, your institution will keep facing disputes it can’t defend.</li>
                 </ul>
             </div>
             <div class="hub-grid home-pillars-grid">
                 <a href="quality-assurance.html" class="hub-card">
                     <h3>Quality Assurance</h3>
-                    <p>Defend your academic standards and stand up to scrutiny during accreditations and disputes.</p>
+                    <p>Defend your academic standards and stand up to scrutiny during TEQSA compliance reviews and
+                        student appeals.</p>
                     <span class="card-arrow">&rarr; View details</span>
                 </a>
                 <a href="student-success.html" class="hub-card">
@@ -82,9 +83,11 @@
                 <span class="hero-subline">Enterprise-Grade Architecture for Higher Education</span>
                 <ul class="hero-feature-list">
                     <li>✓ Seamless LMS Integration (LTI 1.3 standard)</li>
-                    <li>✓ FERPA Compliant &amp; Ready for HECVAT</li>
+                    <li>✓ Australian Privacy Act 1988 Compliant</li>
+                    <li>✓ TEQSA HESF Domain 7 Aligned</li>
                     <li>✓ Secure Institutional Single Sign-On (SSO)</li>
-                    <li>✓ ADA / WCAG 2.1 Accessible</li>
+                    <li>✓ WCAG 2.1 Accessible</li>
+                    <li>✓ Australian Cyber Security Centre (ACSC) Essential Eight Aligned</li>
                 </ul>
             </div>
             <div class="hero-buttons hero-cta">
@@ -201,9 +204,12 @@
         }
 
         .home-evidence-graph {
-            width: 100%;
-            max-width: 980px;
+            width: min(1160px, calc(100vw - 2.5rem));
+            max-width: none;
             margin: 0 auto 2rem;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .home-evidence-graph img {
