@@ -7,19 +7,29 @@
     <title>Compliance | Sapheos</title>
     <meta name="description"
         content="Australia-focused information on student data privacy, responsible AI governance, accessibility, and cybersecurity at Sapheos.">
-    <link rel="stylesheet" href="style.css?v=20260410-fix2">
+    <link rel="stylesheet" href="style.css?v=20260506-tightcards">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         .hub-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
+            max-width: 860px;
+            margin: 0 auto;
             padding: 0 0 6rem;
         }
 
         @media (max-width: 900px) {
             .hub-grid {
                 grid-template-columns: 1fr;
+                max-width: 720px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hub-card h3 {
+                font-size: 1.28rem;
+                line-height: 1.25;
             }
         }
 
@@ -33,6 +43,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            min-width: 0;
         }
 
         .hub-card:hover {
@@ -45,6 +56,10 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--text-heading);
+            line-height: 1.2;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            hyphens: auto;
         }
 
         .hub-card p {
