@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-AU">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Sapheos</title>
     <meta name="description"
-        content="Contact Sapheos for institutional consultation, implementation planning, and general inquiries.">
+        content="Contact Sapheos for institutional consultation, implementation planning, and general enquiries.">
     <link rel="stylesheet" href="style.css?v=20260410-fix2">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -51,8 +51,8 @@
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="institution">Institution / Organization</label>
-                    <input type="text" id="institution" name="institution" placeholder="University or Company Name"
+                    <label for="institution">Institution / Organisation</label>
+                    <input type="text" id="institution" name="institution" placeholder="University or Organisation Name"
                         required>
                 </div>
                 <div class="form-group">
@@ -68,7 +68,7 @@
                     <textarea id="message" name="message" rows="4"
                         placeholder="Describe your institution's priorities and timeline." required></textarea>
                 </div>
-                <button type="submit" class="btn-primary full-width">Submit Inquiry</button>
+                <button type="submit" class="btn-primary full-width">Submit Enquiry</button>
             </form>
         </div>
     </main>
@@ -95,7 +95,7 @@
                 e.preventDefault();
 
                 const btn = contactForm.querySelector('button[type="submit"]');
-                const originalText = btn ? btn.textContent : 'Submit Inquiry';
+                const originalText = btn ? btn.textContent : 'Submit Enquiry';
                 if (btn) {
                     btn.textContent = 'Sending...';
                     btn.disabled = true;
@@ -113,7 +113,7 @@
                         throw new Error(`HTTP ${response.status}`);
                     }
 
-                    alert('Your inquiry has been sent successfully.');
+                    alert('Your enquiry has been sent successfully.');
                     contactForm.reset();
                 } catch (error) {
                     alert('Submission error. Please try again in a few moments.');
